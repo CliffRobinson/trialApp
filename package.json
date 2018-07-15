@@ -1,0 +1,13 @@
+{
+  "name": "trialApp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "CliffRobinson <Clifford.F.Robinson@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
