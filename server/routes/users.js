@@ -14,7 +14,11 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
     const user = req.body
-    res.json(user)
+    //console.log("Trying to post ", user);
+    usersDB.addUser(user)
+        .then(dbOutput => {
+            res.json(dbOutput)
+        })
 })
 
 
