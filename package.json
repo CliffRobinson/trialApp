@@ -6,13 +6,15 @@
   "license": "MIT",
   "scripts": {
     "start": "node server/index.js",
-    "dev": "nodemon server/index.js",
+    "dev": "nodemon server/index.js & webpack --watch",
+    "webpack": "webpack",
     "knex": "knex"
   },
   "dependencies": {
     "express": "^4.16.3",
     "knex": "^0.15.1",
     "nodemon": "^1.18.2",
-    "sqlite3": "^4.0.2"
+    "sqlite3": "^4.0.2",
+    "webpack": "^2.3.3"
   }
 }
