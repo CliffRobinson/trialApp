@@ -1,1 +1,1 @@
-console.log('Hi client');
+import React from 'react'
