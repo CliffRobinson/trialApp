@@ -1,5 +1,5 @@
 import React from 'react'
-import Users from './users'
+import Users from './Users'
 
 export default function() {
     return <div>

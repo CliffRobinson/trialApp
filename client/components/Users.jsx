@@ -4,6 +4,8 @@ import { connect } from 'react-redux'
 
 import {getUsers} from '../api/users'
 
+import User from './User'
+
 class Users extends React.Component {
     constructor(props){
         super(props)
@@ -15,15 +17,15 @@ class Users extends React.Component {
     }
 
     render() {
-        console.log("props is",this.props.users);
+        const {users} = this.props
+        //console.log("props is",users);
         return (
             <div className='users'>
-                Dis still de user comp
                 {
-                    this.props.users.map(user => {
-                        <div key={`user-${user.id}`}>
-                            <h1>{user.name}</h1>
-                        </div>
+                    users.map(user => {
+                        return (<div className="userView" key={`user-${user.user_id}`}>
+                            <User user={user} />
+                        </div>)
                     })
                 }
             </div>
